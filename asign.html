@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="form">
+        <form action="">
+            <div class="signup">
+                <div class="head">
+                    <label>Sign Up</label>
+                </div></br>
+                <div>
+                    <label> Name:</label><br>
+                    <input type="text"  id="name"  required placeholder="enter your fullnames">
+                    <p id="enter"></p>
+                </div></br>
+                <div>
+                    <label>Email :</label><br>
+                    <input type="email"  id="email"  required placeholder=" enter your email address">
+                    <p id="output"></p>
+                </div></br>
+                <div>
+                    <button class="button" onclick="validation()">
+                        Subscribe
+                    </button>
+
+        
+                </div><br>
+            </div>
+        </form>
+    </div>
+    <style>
+        .form{
+            background-color:rgba(0, 255, 255, 0.089);
+            width: 45%;
+            height: 70vh;
+        }
+        .signup {
+            padding-left: 200px;
+            padding-top: 100px;
+        }
+.head{
+    padding-left: 100px;
+}
+h4{
+    display: none;  
+    color: red;
+}
+
+.signup div input:invalid{
+    outline-color: red;
+}
+        .signup button {
+            width: 300px;
+            gap: 20px;
+            height: 30px;
+            background: blue;
+            margin-top: 20px;
+            border-radius: 5px;
+            border: blue;
+        }
+
+        .signup div button a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .signup div input {
+            width: 300px;
+            height: 30px;
+            outline-color:green;
+        }
+    </style>
+</body>
+<script src="as.js"></script>
+</html>
